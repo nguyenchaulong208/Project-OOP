@@ -1,0 +1,40 @@
+﻿@page
+@model project_22880089.Pages.MH_DanhSachSanPhamModel
+@{
+}
+@* Create a table template list products *@
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th>Mã sản phẩm</th>
+            <th>Tên sản phẩm</th>
+            <th>Đơn vị tính</th>
+            <th>Tồn kho đầu kỳ</th>
+            <th>Giá trị đầu kỳ</th>
+            <th>Số lượng nhập</th>
+            <th>Giá trị nhập</th>
+            <th>Số lượng xuất</th>
+            <th>Giá trị xuất</th>
+            <th>Tồn kho cuối kỳ</th>
+            <th>Giá trị cuối kỳ</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+       @*  @foreach (var item in Model.ListSanPham)
+        {
+            <tr>
+                <td>@item.STT</td>
+                <td>@item.MaSP</td>
+                <td>@item.TenSP</td>
+                <td>@item.DonGia</td>
+                <td>@item.DonViTinh</td>
+                <td>@item.LoaiSP</td>
+                <td>
+                    <a asp-page="./MH_ChiTietSanPham" asp-route-id="@item.MaSP">Chi tiết</a>
+                </td>
+            </tr>
+        } *@
+    </tbody>
+    </table>
