@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\Github Code\\Project-OOP\\project-22880089\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B551BDD3-5589-4AB0-898E-8422034302C1}|project-22880089\\project-22880089.csproj|d:\\github code\\project-oop\\project-22880089\\project-22880089\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B551BDD3-5589-4AB0-898E-8422034302C1}|project-22880089\\project-22880089.csproj|solutionrelative:project-22880089\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Github Code\\Project-OOP\\project-22880089\\project-22880089\\Pages\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:project-22880089\\Pages\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B551BDD3-5589-4AB0-898E-8422034302C1}|project-22880089\\project-22880089.csproj|d:\\github code\\project-oop\\project-22880089\\project-22880089\\pages\\mh_themsanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B551BDD3-5589-4AB0-898E-8422034302C1}|project-22880089\\project-22880089.csproj|solutionrelative:project-22880089\\pages\\mh_themsanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Github Code\\Project-OOP\\project-22880089\\project-22880089\\Pages\\MH_ThemSanPham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:project-22880089\\Pages\\MH_ThemSanPham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B551BDD3-5589-4AB0-898E-8422034302C1}|project-22880089\\project-22880089.csproj|d:\\github code\\project-oop\\project-22880089\\project-22880089\\pages\\mh_danhsachsanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B551BDD3-5589-4AB0-898E-8422034302C1}|project-22880089\\project-22880089.csproj|solutionrelative:project-22880089\\pages\\mh_danhsachsanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Github Code\\Project-OOP\\project-22880089\\project-22880089\\Pages\\MH_DanhSachSanPham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:project-22880089\\Pages\\MH_DanhSachSanPham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,9 +38,9 @@
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Github Code\\Project-OOP\\project-22880089\\project-22880089\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "project-22880089\\Pages\\Index.cshtml",
-              "ToolTip": "D:\\Github Code\\Project-OOP\\project-22880089\\project-22880089\\Pages\\Index.cshtml",
-              "RelativeToolTip": "project-22880089\\Pages\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "ToolTip": "D:\\Github Code\\Project-OOP\\project-22880089\\project-22880089\\Pages\\Index.cshtml*",
+              "RelativeToolTip": "project-22880089\\Pages\\Index.cshtml*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-06T20:23:08.978Z",
               "EditorCaption": ""
@@ -55,8 +55,7 @@
               "RelativeToolTip": "project-22880089\\Pages\\MH_ThemSanPham.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-06T20:23:01.668Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-06T20:23:01.668Z"
             },
             {
               "$type": "Document",
@@ -66,10 +65,9 @@
               "RelativeDocumentMoniker": "project-22880089\\Pages\\MH_DanhSachSanPham.cshtml",
               "ToolTip": "D:\\Github Code\\Project-OOP\\project-22880089\\project-22880089\\Pages\\MH_DanhSachSanPham.cshtml",
               "RelativeToolTip": "project-22880089\\Pages\\MH_DanhSachSanPham.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAywBYAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-06T20:21:39.801Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-06T20:21:39.801Z"
             }
           ]
         }
