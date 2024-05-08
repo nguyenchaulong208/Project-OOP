@@ -51,11 +51,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Test\\ProjectOOP\\Services\\Services.csproj",
+      "projectUniqueName": "D:\\Github Code\\Project-OOP\\ProjectOOP\\Services\\Services.csproj",
       "projectName": "Services",
-      "projectPath": "D:\\Test\\ProjectOOP\\Services\\Services.csproj",
+      "projectPath": "D:\\Github Code\\Project-OOP\\ProjectOOP\\Services\\Services.csproj",
       "packagesPath": "C:\\Users\\LONG\\.nuget\\packages\\",
-      "outputPath": "D:\\Test\\ProjectOOP\\Services\\obj\\",
+      "outputPath": "D:\\Github Code\\Project-OOP\\ProjectOOP\\Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\LONG\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -72,11 +72,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Test\\ProjectOOP\\Entities\\Entities.csproj": {
-              "projectPath": "D:\\Test\\ProjectOOP\\Entities\\Entities.csproj"
+            "D:\\Github Code\\Project-OOP\\ProjectOOP\\Entities\\Entities.csproj": {
+              "projectPath": "D:\\Github Code\\Project-OOP\\ProjectOOP\\Entities\\Entities.csproj"
             },
-            "D:\\Test\\ProjectOOP\\Repo\\Repo.csproj": {
-              "projectPath": "D:\\Test\\ProjectOOP\\Repo\\Repo.csproj"
+            "D:\\Github Code\\Project-OOP\\ProjectOOP\\Repo\\Repo.csproj": {
+              "projectPath": "D:\\Github Code\\Project-OOP\\ProjectOOP\\Repo\\Repo.csproj"
             }
           }
         }

@@ -5,7 +5,7 @@ namespace Repo
     public class LuuTruSanPham : ILuuTruSanPham
     {
         //Đường dẫn file chứa danh sách sản phẩm từ folder Data
-        private string _filePath = "D:\\Test\\ProjectOOP\\dssp.txt";
+        private string _filePath = "D:\\Github Code\\Project-OOP\\ProjectOOP\\dssp.txt";
 
 
         public List<SanPham> DocDanhSachSanPham()

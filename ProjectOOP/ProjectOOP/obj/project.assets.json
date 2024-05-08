@@ -70,11 +70,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Test\\ProjectOOP\\ProjectOOP\\ProjectOOP.csproj",
+      "projectUniqueName": "D:\\Github Code\\Project-OOP\\ProjectOOP\\ProjectOOP\\ProjectOOP.csproj",
       "projectName": "ProjectOOP",
-      "projectPath": "D:\\Test\\ProjectOOP\\ProjectOOP\\ProjectOOP.csproj",
+      "projectPath": "D:\\Github Code\\Project-OOP\\ProjectOOP\\ProjectOOP\\ProjectOOP.csproj",
       "packagesPath": "C:\\Users\\LONG\\.nuget\\packages\\",
-      "outputPath": "D:\\Test\\ProjectOOP\\ProjectOOP\\obj\\",
+      "outputPath": "D:\\Github Code\\Project-OOP\\ProjectOOP\\ProjectOOP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\LONG\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -91,11 +91,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Test\\ProjectOOP\\Entities\\Entities.csproj": {
-              "projectPath": "D:\\Test\\ProjectOOP\\Entities\\Entities.csproj"
+            "D:\\Github Code\\Project-OOP\\ProjectOOP\\Entities\\Entities.csproj": {
+              "projectPath": "D:\\Github Code\\Project-OOP\\ProjectOOP\\Entities\\Entities.csproj"
             },
-            "D:\\Test\\ProjectOOP\\Services\\Services.csproj": {
-              "projectPath": "D:\\Test\\ProjectOOP\\Services\\Services.csproj"
+            "D:\\Github Code\\Project-OOP\\ProjectOOP\\Services\\Services.csproj": {
+              "projectPath": "D:\\Github Code\\Project-OOP\\ProjectOOP\\Services\\Services.csproj"
             }
           }
         }
