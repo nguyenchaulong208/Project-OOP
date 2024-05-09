@@ -1,0 +1,15 @@
+﻿@page
+@model ProjectOOP.Pages.MH_ThemSanPhamModel
+@{
+}
+<div>
+    <form method="post">
+        <label for="TenSP">Tên sản phẩm</label><br />
+        <input type="text" name="TenSP" /><br />
+        <label for ="DGia">Đơn giá</label><br />
+        <input type="text" name="DGia" /><br />
+        <input type="submit" name="btnAdd" value="Thêm" />
+        
+    </form>
+    @Model.Chuoi
+</div>
