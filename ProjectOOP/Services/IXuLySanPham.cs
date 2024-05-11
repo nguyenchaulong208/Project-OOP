@@ -13,6 +13,7 @@ namespace Services
         List<SanPham> DocDanhSachSanPham(string tuKhoa = "");
         //Ham them san pham
         void ThemSanPham(SanPham sanPham);
+      
     }
     
 }

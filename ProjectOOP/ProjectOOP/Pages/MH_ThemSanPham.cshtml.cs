@@ -8,6 +8,8 @@ namespace ProjectOOP.Pages
     public class MH_ThemSanPhamModel : PageModel
     {
         [BindProperty]
+        public string SoHoaDon { get; set; }
+        [BindProperty]
         public int MaSP { get; set; }
         //Bind data to properties
         [BindProperty]
@@ -23,7 +25,7 @@ namespace ProjectOOP.Pages
         [BindProperty]
         public string nam { get; set; }
         [BindProperty]
-        public DateTime hsd { get; set; }
+        public DateOnly hsd { get; set; }
         [BindProperty]
         public string LoaiHang { get; set; }
         //Tao thong bao sau khi luu
@@ -37,7 +39,7 @@ namespace ProjectOOP.Pages
         public void OnPost()
         {
             //Kiem tra du lieu va them
-            if (string.IsNullOrEmpty(TenSP) || string.IsNullOrEmpty(ctySX) || string.IsNullOrEmpty(nam))
+            if (string.IsNullOrEmpty(TenSP) || string.IsNullOrEmpty(SoHoaDon) || string.IsNullOrEmpty(ctySX) || string.IsNullOrEmpty(nam))
             {
                 Chuoi = "Dữ liệu không hợp lệ";
             }
@@ -49,12 +51,16 @@ namespace ProjectOOP.Pages
             {
                 //Them san pham
 
-                var sp = new SanPham(MaSP, TenSP, DGia, SoLuong, ThanhTien, ctySX, nam, LoaiHang, hsd);
-                if (MaSP == 0)
+                var sp = new SanPham(SoHoaDon,MaSP, TenSP, DGia, SoLuong, ThanhTien, ctySX, nam, LoaiHang, hsd);
+                if (MaSP != 0)
                 {
                     sp.maSP = Convert.ToInt32(MaSP);
                 }
-                _xuLySanPham.ThemSanPham(sp);
+                else
+                {
+                    _xuLySanPham.ThemSanPham(sp);
+                }
+                
                 Response.Redirect("/MH_DanhSachSanPham");
             }
             

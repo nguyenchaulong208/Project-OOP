@@ -14,7 +14,8 @@ namespace Services
            var dssp = _luuTruSanPham.DocDanhSachSanPham();
             foreach(var sp in dssp)
             {
-                if (sp.tenSP.Contains(tuKhoa))
+                
+                if (sp.tenSP.Contains(tuKhoa) || Convert.ToString(sp.maSP).Contains(tuKhoa))
                 {
                     kq.Add(sp);
                 }

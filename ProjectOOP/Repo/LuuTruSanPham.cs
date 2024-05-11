@@ -31,7 +31,7 @@ namespace Repo
             file.WriteLine(dsSanPham.Count);
             foreach(var sp in dsSanPham)
             {
-                file.WriteLine($"{sp.maSP},{sp.tenSP},{sp.donGia},{sp.soLuong},{sp.thanhTien},{sp.hanSuDung},{sp.loaiHang},{sp.congTySanXuat},{sp.namSanXuat}");
+                file.WriteLine($"{sp.soHoaDon},{sp.maSP},{sp.tenSP},{sp.donGia},{sp.soLuong},{sp.thanhTien},{sp.hanSuDung},{sp.loaiHang},{sp.congTySanXuat},{sp.namSanXuat}");
             }
             file.Close ();
             return dsSanPham;
