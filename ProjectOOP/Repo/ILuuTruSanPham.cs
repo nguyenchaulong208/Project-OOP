@@ -10,6 +10,7 @@ namespace Repo
     public interface ILuuTruSanPham
     {
         List<SanPham> DocDanhSachSanPham();
+        List<SanPham> LuuDanhSachSanPham(List<SanPham> SanPham);
         void ThemSanPham(SanPham sanPham);
     }
 }

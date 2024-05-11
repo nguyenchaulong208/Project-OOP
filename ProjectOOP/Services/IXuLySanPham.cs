@@ -11,8 +11,10 @@ namespace Services
     {
         //Hàm trả về danh sách sản phẩm
         List<SanPham> DocDanhSachSanPham(string tuKhoa = "");
+        
         //Ham them san pham
         void ThemSanPham(SanPham sanPham);
+        void SuaSanPham(SanPham SanPham);
       
     }
     

@@ -5,7 +5,7 @@ using Services;
 
 namespace ProjectOOP.Pages
 {
-    public class MH_SuaSanPhamModel : PageModel
+    public class MH_SuaSanPhamMuaModel : PageModel
     {
         [BindProperty]
         public string SoHoaDon { get; set; }
@@ -62,25 +62,11 @@ namespace ProjectOOP.Pages
         }
         public void OnPost()
         {
-            
-            ds = _xuLySanPham.DocDanhSachSanPham(Convert.ToString(MaSP));
-            foreach (var sp in ds)
-            {
-                if(MaSP == sp.maSP && SoHoaDon == sp.soHoaDon)
-                {
-                    sp.soHoaDon = SoHoaDon;
-                    sp.maSP = MaSP;
-                    sp.tenSP = TenSP;
-                    sp.donGia = DGia;
-                    sp.soLuong = SoLuong;
-                    sp.thanhTien = ThanhTien;
-                    sp.congTySanXuat = ctySX;
-                    sp.namSanXuat = nam;
-                    sp.hanSuDung = hsd;
-                    sp.loaiHang = LoaiHang;
-                }
-            }
-          
+
+            var ds = new SanPham(SoHoaDon, MaSP, TenSP, DGia, SoLuong, ThanhTien, ctySX, nam, LoaiHang, hsd);
+
+            _xuLySanPham.SuaSanPham(ds);
+            Response.Redirect("/MH_DanhSachMua");
 
         }
     }

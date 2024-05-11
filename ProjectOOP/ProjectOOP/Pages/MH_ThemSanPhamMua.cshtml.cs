@@ -5,7 +5,7 @@ using Services;
 
 namespace ProjectOOP.Pages
 {
-    public class MH_ThemSanPhamModel : PageModel
+    public class MH_ThemSanPhamMuaModel : PageModel
     {
         [BindProperty]
         public string SoHoaDon { get; set; }
@@ -61,7 +61,7 @@ namespace ProjectOOP.Pages
                     _xuLySanPham.ThemSanPham(sp);
                 }
                 
-                Response.Redirect("/MH_DanhSachSanPham");
+                Response.Redirect("/MH_DanhSachMua");
             }
             
 

@@ -43,5 +43,19 @@ namespace Services
             sanPham.maSP = maxID + 1;
             _luuTruSanPham.ThemSanPham(sanPham);
         }
+        public void SuaSanPham(SanPham sanPham)
+        {
+            var ds = _luuTruSanPham.DocDanhSachSanPham();
+            for (int i = 0; i < ds.Count; i++)
+            {
+                if (ds[i].maSP == sanPham.maSP && ds[i].soHoaDon == sanPham.soHoaDon)
+                {
+                    ds[i] = sanPham;
+
+                }
+            }
+            _luuTruSanPham.LuuDanhSachSanPham(ds);
+        }
+        
     }
 }

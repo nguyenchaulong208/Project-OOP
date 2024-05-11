@@ -1,5 +1,5 @@
 ﻿@page
-@model ProjectOOP.Pages.MH_DanhSachSanPhamModel
+@model ProjectOOP.Pages.MH_DanhSachMuaModel
 @using Entities
 @{
 }
@@ -29,7 +29,7 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (SanPham sp in Model.DanhSachSanPham)
+            @foreach (SanPham sp in Model.DanhSachMua)
             {
                 <tr>
                     <td>@sp.soHoaDon</td>
@@ -43,7 +43,7 @@
                     <td>@sp.namSanXuat</td>
                     <td>@sp.loaiHang</td>
                     <td>
-                        <a href="/MH_SuaSanPham?maSP=@sp.maSP">Sửa</a>
+                        <a href="/MH_SuaSanPhamMua?maSP=@sp.maSP">Sửa</a>
                             
                         
                        
