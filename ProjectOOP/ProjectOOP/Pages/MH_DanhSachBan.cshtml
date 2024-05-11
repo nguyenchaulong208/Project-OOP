@@ -1,0 +1,58 @@
+﻿@page
+@model ProjectOOP.Pages.MH_DanhSachBanModel
+@using Entities
+@{
+}
+
+<form method="post">
+    <label for="tukhoa">Từ Khóa:</label><br />
+    <input type="text" name="txtSearch" value="" />
+    <input type="submit" name="btnSearch" value="Tìm Kiếm" />
+</form>
+<div>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Số hóa đơn</th>
+                <th>Mã sản phẩm</th>
+                <th>Tên sản phẩm</th>
+                <th>Số lượng</th>
+                <th>Đơn giá</th>
+                <th>Thành tiền</th>
+                <th>Hạn sử dụng</th>
+                <th>Công ty sản xuất</th>
+                <th>Năm sản xuất</th>
+                <th>Loại hàng</th>
+                <th></th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (SanPham sp in Model.DanhSachBan)
+            {
+                <tr>
+                    <td>@sp.soHoaDon</td>
+                    <td>@sp.maSP</td>
+                    <td>@sp.tenSP</td>
+                    <td>@sp.soLuong</td>
+                    <td>@sp.donGia</td>
+                    <td>@sp.thanhTien</td>
+                    <td>@sp.hanSuDung</td>
+                    <td>@sp.congTySanXuat</td>
+                    <td>@sp.namSanXuat</td>
+                    <td>@sp.loaiHang</td>
+                    <td>
+                        <a href="/MH_SuaSanPhamBan?maSP=@sp.maSP">Sửa</a>
+
+
+
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@Model.Chuoi

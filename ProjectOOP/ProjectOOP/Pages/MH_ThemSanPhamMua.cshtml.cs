@@ -34,10 +34,11 @@ namespace ProjectOOP.Pages
         private IXuLySanPham _xuLySanPham = new XuLySanPham();
         public void OnGet()
         {
-
+            _xuLySanPham.loadFile();
         }
         public void OnPost()
         {
+            _xuLySanPham.loadFile();
             //Kiem tra du lieu va them
             if (string.IsNullOrEmpty(TenSP) || string.IsNullOrEmpty(SoHoaDon) || string.IsNullOrEmpty(ctySX) || string.IsNullOrEmpty(nam))
             {

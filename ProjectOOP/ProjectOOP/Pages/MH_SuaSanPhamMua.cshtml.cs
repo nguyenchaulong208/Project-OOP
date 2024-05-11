@@ -34,7 +34,7 @@ namespace ProjectOOP.Pages
 
         public void OnGet()
         {
-
+            _xuLySanPham.loadFile();
             // Lấy MaSP từ query string
             MaSP = Convert.ToInt32(Request.Query["MaSP"]);
 
@@ -62,6 +62,7 @@ namespace ProjectOOP.Pages
         }
         public void OnPost()
         {
+            _xuLySanPham.loadFile();
 
             var ds = new SanPham(SoHoaDon, MaSP, TenSP, DGia, SoLuong, ThanhTien, ctySX, nam, LoaiHang, hsd);
 

@@ -26,12 +26,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Github Code/Project-OOP/ProjectOOP/ProjectOOP/Pages/MH_DanhSachBan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfRGFuaFNhY2hCYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Github Code/Project-OOP/ProjectOOP/ProjectOOP/Pages/MH_DanhSachMua.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfRGFuaFNhY2hNdWEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Github Code/Project-OOP/ProjectOOP/ProjectOOP/Pages/MH_SuaSanPhamBan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfU3VhU2FuUGhhbUJhbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Github Code/Project-OOP/ProjectOOP/ProjectOOP/Pages/MH_SuaSanPhamMua.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfU3VhU2FuUGhhbU11YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github Code/Project-OOP/ProjectOOP/ProjectOOP/Pages/MH_ThemSanPhamBan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfVGhlbVNhblBoYW1CYW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Github Code/Project-OOP/ProjectOOP/ProjectOOP/Pages/MH_ThemSanPhamMua.cshtml]

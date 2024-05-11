@@ -6,16 +6,28 @@ namespace Services
 {
     public class XuLySanPham: IXuLySanPham
     {
+        
         //Dependencies den interface
         private ILuuTruSanPham _luuTruSanPham = new LuuTruSanPham();
+        public void loadFile()
+        {
+            string _file = "../dssp.txt";
+            _luuTruSanPham.FilePath(_file);
+        }
+        public void loadFileOut()
+        {
+            string _file = "../dsspOut.txt";
+            _luuTruSanPham.FilePath(_file);
+        }
         public List<SanPham> DocDanhSachSanPham(string tuKhoa = "")
         {
+            
             List<SanPham> kq = new List<SanPham>();
            var dssp = _luuTruSanPham.DocDanhSachSanPham();
             foreach(var sp in dssp)
             {
                 
-                if (sp.tenSP.Contains(tuKhoa) || Convert.ToString(sp.maSP).Contains(tuKhoa))
+                if (sp.tenSP.Contains(tuKhoa) || Convert.ToString(sp.maSP).Contains(tuKhoa) || sp.loaiHang.Contains(tuKhoa))
                 {
                     kq.Add(sp);
                 }
@@ -26,8 +38,9 @@ namespace Services
         }
         public void ThemSanPham(SanPham sanPham)
         {
-            //Load danh sach SP da luu
-            var dssp = _luuTruSanPham.DocDanhSachSanPham();
+
+           
+           var dssp = _luuTruSanPham.DocDanhSachSanPham();
 
             int maxID = 0; //maSP danh so tu dong
             //Kiem tra

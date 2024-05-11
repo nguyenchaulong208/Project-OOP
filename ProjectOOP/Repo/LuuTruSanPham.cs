@@ -5,11 +5,17 @@ namespace Repo
     public class LuuTruSanPham : ILuuTruSanPham
     {
         //Đường dẫn file chứa danh sách sản phẩm từ folder Data
-        private string _filePath = "D:\\Github Code\\Project-OOP\\ProjectOOP\\dssp.txt";
-
+        private string _filePath;
+       public string FilePath(string filePath)
+        {
+            _filePath = filePath;
+            return _filePath;
+        }
+   
 
         public List<SanPham> DocDanhSachSanPham()
         {
+           
             //Doc danh sach san pham tu file
             StreamReader file = new StreamReader(_filePath);
             int n;
@@ -44,5 +50,8 @@ namespace Repo
             dssp.Add(sanPham);
             LuuDanhSachSanPham(dssp);
         }
+
+        
+
     }
 }

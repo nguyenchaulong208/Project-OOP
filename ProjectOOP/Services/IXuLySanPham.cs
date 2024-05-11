@@ -15,7 +15,10 @@ namespace Services
         //Ham them san pham
         void ThemSanPham(SanPham sanPham);
         void SuaSanPham(SanPham SanPham);
-      
+        void loadFile();
+        void loadFileOut();
+
+
     }
     
 }
