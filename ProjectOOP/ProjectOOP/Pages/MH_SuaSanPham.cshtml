@@ -1,11 +1,12 @@
 ﻿@page
-@model ProjectOOP.Pages.MH_ThemSanPhamModel
+@model ProjectOOP.Pages.MH_SuaSanPhamModel
 @{
+   
 }
 <div>
     <form method="post">
         <label for="MaSP">Mã sản phẩm</label><br />
-        <input type="text" name="MaSP" /><br />
+        <input type="text" name="MaSP"/><br />
         <label for="TenSP">Tên sản phẩm</label><br />
         <input type="text" name="TenSP" /><br />
         <label for="SoLuong">Số lượng</label><br />
@@ -20,9 +21,10 @@
         <input type="text" name="nam" /><br />
         <label for="hsd">Hạn sử dụng</label><br />
         <input type="text" name="hsd" /><br /><br />
-        <label for="LoaiHang">Loại hàng</label><br />
-        <input type="text" name="LoaiHang" /><br /><br />
-        <input type="submit" name="btnAdd" value="Thêm" />
+        <label for="hsd">Hạn sử dụng</label><br />
+        <input type="text" name="hsd" /><br /><br />
+
+        <input type="submit" name="btnEdit" value="Sửa" />
+
     </form>
-    @Model.Chuoi
 </div>

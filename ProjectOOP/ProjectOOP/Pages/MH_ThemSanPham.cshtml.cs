@@ -7,11 +7,25 @@ namespace ProjectOOP.Pages
 {
     public class MH_ThemSanPhamModel : PageModel
     {
+        [BindProperty]
+        public int MaSP { get; set; }
         //Bind data to properties
         [BindProperty]
         public string TenSP {  get; set; }
         [BindProperty]
         public int DGia {  get; set; }
+        [BindProperty]
+        public int SoLuong { get; set; }
+        [BindProperty]
+        public int ThanhTien { get; set; }
+        [BindProperty]
+        public string ctySX { get; set; }
+        [BindProperty]
+        public string nam { get; set; }
+        [BindProperty]
+        public DateTime hsd { get; set; }
+        [BindProperty]
+        public string LoaiHang { get; set; }
         //Tao thong bao sau khi luu
         public string Chuoi {  get; set; } = string.Empty;
         //Dependencies den Interface
@@ -23,21 +37,27 @@ namespace ProjectOOP.Pages
         public void OnPost()
         {
             //Kiem tra du lieu va them
-            if (string.IsNullOrEmpty(TenSP))
+            if (string.IsNullOrEmpty(TenSP) || string.IsNullOrEmpty(ctySX) || string.IsNullOrEmpty(nam))
             {
-                Chuoi = "Tên không được để trống!";
+                Chuoi = "Dữ liệu không hợp lệ";
             }
-            if(DGia < 0)
+            if(DGia <= 0 || SoLuong <= 0 || ThanhTien <= 0)
             {
-                Chuoi += "Giá không hợp lệ"; //Neu dong thoi ca 2 deu empty thi ghep chuoi
+                Chuoi += "Dữ liệu không hợp lệ"; //Neu dong thoi ca 2 deu empty thi ghep chuoi
             }
             if (Chuoi == string.Empty)
             {
                 //Them san pham
-                var sp = new SanPham(TenSP,DGia);
+
+                var sp = new SanPham(MaSP, TenSP, DGia, SoLuong, ThanhTien, ctySX, nam, LoaiHang, hsd);
+                if (MaSP == 0)
+                {
+                    sp.maSP = Convert.ToInt32(MaSP);
+                }
                 _xuLySanPham.ThemSanPham(sp);
                 Response.Redirect("/MH_DanhSachSanPham");
             }
+            
 
         }
     }
