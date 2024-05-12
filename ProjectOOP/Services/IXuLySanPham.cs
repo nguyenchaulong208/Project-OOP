@@ -11,12 +11,15 @@ namespace Services
     {
         //Hàm trả về danh sách sản phẩm
         List<SanPham> DocDanhSachSanPham(string tuKhoa = "");
-        
+        List<SanPham> TimKiemTongHop(string tuKhoa = "");
+        List<SanPham> XuLyTrungLap(List<SanPham> sanPham);
+
         //Ham them san pham
         void ThemSanPham(SanPham sanPham);
         void SuaSanPham(SanPham SanPham);
         void loadFile();
         void loadFileOut();
+        List<SanPham>TongHopSanPham();
 
 
     }

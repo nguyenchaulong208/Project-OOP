@@ -4,9 +4,9 @@ using static Services.XuLySanPham;
 
 namespace Services
 {
-    public class XuLySanPham: IXuLySanPham
+    public class XuLySanPham : IXuLySanPham
     {
-        
+
         //Dependencies den interface
         private ILuuTruSanPham _luuTruSanPham = new LuuTruSanPham();
         public void loadFile()
@@ -21,12 +21,12 @@ namespace Services
         }
         public List<SanPham> DocDanhSachSanPham(string tuKhoa = "")
         {
-            
+
             List<SanPham> kq = new List<SanPham>();
-           var dssp = _luuTruSanPham.DocDanhSachSanPham();
-            foreach(var sp in dssp)
+            var dssp = _luuTruSanPham.DocDanhSachSanPham();
+            foreach (var sp in dssp)
             {
-                
+
                 if (sp.tenSP.Contains(tuKhoa) || Convert.ToString(sp.maSP).Contains(tuKhoa) || sp.loaiHang.Contains(tuKhoa))
                 {
                     kq.Add(sp);
@@ -39,15 +39,15 @@ namespace Services
         public void ThemSanPham(SanPham sanPham)
         {
 
-           
-           var dssp = _luuTruSanPham.DocDanhSachSanPham();
+
+            var dssp = _luuTruSanPham.DocDanhSachSanPham();
 
             int maxID = 0; //maSP danh so tu dong
             //Kiem tra
-            foreach(var sp in dssp)
+            foreach (var sp in dssp)
             { //Lay ma san pham trong danh sach da luu de gan vao maxID
               //=> danh so tu dong cho cac ma san pham tiep theo
-                if(sp.maSP > maxID)
+                if (sp.maSP > maxID)
                 {
                     maxID = sp.maSP;
                 }
@@ -69,6 +69,111 @@ namespace Services
             }
             _luuTruSanPham.LuuDanhSachSanPham(ds);
         }
-        
+
+
+        public List<SanPham> DanhSachTongHop()
+        {
+            
+            List<SanPham> LoadDs = _luuTruSanPham.DocDanhSachSanPham();
+            List<SanPham> dsSP = new List<SanPham>();
+            foreach (var sp in LoadDs)
+            {
+                bool found = false;
+                // Duyệt qua danh sách dsMua để kiểm tra xem sản phẩm đã được thêm vào dschưa
+                foreach (var item in dsSP)
+                {
+                    if (sp.maSP == item.maSP)
+                    {
+                        // Tăng số lượng sản phẩm nếu đã có trong dsMua
+                        item.soLuong += sp.soLuong;
+                        found = true; 
+                        break;
+                        
+                    }
+                    
+                }
+                // Nếu sản phẩm chưa có trong dsMua, thêm vào danh sách
+                if(!found)
+                {
+                   
+                    dsSP.Add(sp);
+                }
+             
+                
+            }
+            return dsSP;
+        }
+
+
+        public List<SanPham> TongHopSanPham()
+        {
+            List<SanPham> TongHop = new List<SanPham>();
+            loadFile();
+            List<SanPham> dsMua = DanhSachTongHop();
+      
+            loadFileOut();
+            List<SanPham> dsBan = DanhSachTongHop();
+
+            //foreach (var itemMua in dsMua)
+            //{
+            //    foreach (var itemBan in dsBan)
+            //    {
+            //        if (itemMua.maSP == itemBan.maSP )
+            //        {
+            //            int SoLuongTongHop = 0;
+            //            SoLuongTongHop = itemMua.soLuong - itemBan.soLuong;
+            //            itemMua.soLuong = SoLuongTongHop;
+            //            TongHop.Add(itemMua);
+            //        }
+            //        if (itemMua.maSP != itemBan.maSP)
+            //        {
+            //            int SoLuongTongHop = 0;
+            //            TongHop.Add(itemMua);
+            //            SoLuongTongHop = 0 - itemBan.soLuong;
+            //            itemBan.soLuong = SoLuongTongHop;
+            //            TongHop.Add(itemBan);
+            //        }
+                    
+            //    }
+            //}
+
+            return dsBan;
+        }
+
+        public List<SanPham> TimKiemTongHop(string tuKhoa = "")
+        {
+
+            List<SanPham> kq = new List<SanPham>();
+            var dssp = TongHopSanPham();
+            foreach (var sp in dssp)
+            {
+
+                if (sp.tenSP.Contains(tuKhoa) || Convert.ToString(sp.maSP).Contains(tuKhoa) || sp.loaiHang.Contains(tuKhoa))
+                {
+                    kq.Add(sp);
+                }
+
+
+            }
+            return kq;
+        }
+
+        public List<SanPham> XuLyTrungLap(List<SanPham> sanPham)
+        {
+           
+           
+            List<SanPham> DSSP = new List<SanPham>();
+            foreach (var s in sanPham)
+            {
+                foreach (var sp in sanPham)
+                {
+                    
+                }
+            }
+            return DSSP;
+        }
     }
+    
+
+    
 }
