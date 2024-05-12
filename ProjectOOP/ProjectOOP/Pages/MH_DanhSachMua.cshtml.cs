@@ -12,10 +12,12 @@ namespace ProjectOOP.Pages
 
         [BindProperty]
         public string txtSearch { get; set; } //name phải giống với name của textbox
-        
+
+        [BindProperty]
+        public DateOnly date { get; set; }
+
         private IXuLySanPham _xuLySanPham = new XuLySanPham();
 
-        private string _filePath = "../dssp.txt";
 
 
         public List<SanPham> DanhSachMua;
@@ -25,15 +27,31 @@ namespace ProjectOOP.Pages
 
          _xuLySanPham.loadFile();
 
-            DanhSachMua = _xuLySanPham.DocDanhSachSanPham();
+           
+        if(txtSearch != string.Empty)
+            {
+                DanhSachMua = _xuLySanPham.DocDanhSachSanPham();
+            }
+        else
+            {
+                DanhSachMua = _xuLySanPham.HanSuDung(date);
+            }
+
+           
 
         }
         public void OnPost()
         {
             _xuLySanPham.loadFile();
-            DanhSachMua = _xuLySanPham.DocDanhSachSanPham(txtSearch);
-        }
-       
+         
+                //DanhSachMua = _xuLySanPham.DocDanhSachSanPham(txtSearch);
+           
+                DanhSachMua = _xuLySanPham.HanSuDung(date);
 
+
+           
+
+
+        }
     }
 }

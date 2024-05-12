@@ -12,8 +12,7 @@ namespace Services
         //Hàm trả về danh sách sản phẩm
         List<SanPham> DocDanhSachSanPham(string tuKhoa = "");
         List<SanPham> TimKiemTongHop(string tuKhoa = "");
-        List<SanPham> XuLyTrungLap(List<SanPham> sanPham);
-
+        List<SanPham> HanSuDung(DateOnly date);
         //Ham them san pham
         void ThemSanPham(SanPham sanPham);
         void SuaSanPham(SanPham SanPham);

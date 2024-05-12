@@ -1,5 +1,6 @@
 ﻿using Entities;
 using Repo;
+using System;
 using static Services.XuLySanPham;
 
 namespace Services
@@ -114,30 +115,31 @@ namespace Services
             loadFileOut();
             List<SanPham> dsBan = DanhSachTongHop();
 
-            //foreach (var itemMua in dsMua)
-            //{
-            //    foreach (var itemBan in dsBan)
-            //    {
-            //        if (itemMua.maSP == itemBan.maSP )
-            //        {
-            //            int SoLuongTongHop = 0;
-            //            SoLuongTongHop = itemMua.soLuong - itemBan.soLuong;
-            //            itemMua.soLuong = SoLuongTongHop;
-            //            TongHop.Add(itemMua);
-            //        }
-            //        if (itemMua.maSP != itemBan.maSP)
-            //        {
-            //            int SoLuongTongHop = 0;
-            //            TongHop.Add(itemMua);
-            //            SoLuongTongHop = 0 - itemBan.soLuong;
-            //            itemBan.soLuong = SoLuongTongHop;
-            //            TongHop.Add(itemBan);
-            //        }
-                    
-            //    }
-            //}
+            foreach(var item in dsMua)
+            {
+                bool check = false;
+                foreach (var item2 in dsBan)
+                {
+                    if(item.maSP== item2.maSP)
+                    {
 
-            return dsBan;
+                        item2.soLuong += item.soLuong;
+                        check = true;
+                        break;
+                    }
+
+                }
+                if (!check)
+                {
+                    TongHop.Add(item);
+                }
+            }
+
+            // Thêm danh sách sản phẩm bán vào danh sách tổng hợp
+            TongHop.AddRange(dsBan);
+        
+
+            return TongHop;
         }
 
         public List<SanPham> TimKiemTongHop(string tuKhoa = "")
@@ -158,20 +160,25 @@ namespace Services
             return kq;
         }
 
-        public List<SanPham> XuLyTrungLap(List<SanPham> sanPham)
+        public List<SanPham> HanSuDung(DateOnly date)
         {
-           
-           
-            List<SanPham> DSSP = new List<SanPham>();
-            foreach (var s in sanPham)
+            List<SanPham> Hsd = new List<SanPham>();
+            var DsSanPham = _luuTruSanPham.DocDanhSachSanPham();
+            foreach (var item in DsSanPham)
             {
-                foreach (var sp in sanPham)
+               
+                if (item.hanSuDung < DateOnly.FromDateTime(DateTime.Today))
                 {
-                    
+                    Hsd.Add(item);
                 }
             }
-            return DSSP;
+            return Hsd;
         }
+        //private List<SanPham> DocHanSuDung(List<SanPham> sanPham)
+        //{
+
+        //}
+
     }
     
 
