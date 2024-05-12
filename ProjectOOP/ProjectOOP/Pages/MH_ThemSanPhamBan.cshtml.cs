@@ -59,7 +59,7 @@ namespace ProjectOOP.Pages
                 }
                 else
                 {
-                    _xuLySanPham.ThemSanPham(sp);
+                    _xuLySanPham.ThemSanPham(sp, MaSP);
                 }
 
                 Response.Redirect("/MH_DanhSachBan");

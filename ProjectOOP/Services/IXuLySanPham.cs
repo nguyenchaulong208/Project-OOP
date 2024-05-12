@@ -14,7 +14,7 @@ namespace Services
         List<SanPham> TimKiemTongHop(string tuKhoa = "");
         List<SanPham> HanSuDung(DateOnly date);
         //Ham them san pham
-        void ThemSanPham(SanPham sanPham);
+        void ThemSanPham(SanPham sanPham, int MaSP);
         void SuaSanPham(SanPham SanPham);
         void loadFile();
         void loadFileOut();

@@ -37,7 +37,7 @@ namespace Services
             }
             return kq;
         }
-        public void ThemSanPham(SanPham sanPham)
+        public void ThemSanPham(SanPham sanPham, int MaSP)
         {
 
 
@@ -48,14 +48,23 @@ namespace Services
             foreach (var sp in dssp)
             { //Lay ma san pham trong danh sach da luu de gan vao maxID
               //=> danh so tu dong cho cac ma san pham tiep theo
+                
                 if (sp.maSP > maxID)
                 {
                     maxID = sp.maSP;
                 }
             }
             //Tao maSP tu dong
-            sanPham.maSP = maxID + 1;
-            _luuTruSanPham.ThemSanPham(sanPham);
+            if(MaSP == 0)
+            {
+                sanPham.maSP = maxID + 1;
+                _luuTruSanPham.ThemSanPham(sanPham);
+            }
+            else
+            {
+                _luuTruSanPham.ThemSanPham(sanPham);
+            }
+          
         }
         public void SuaSanPham(SanPham sanPham)
         {

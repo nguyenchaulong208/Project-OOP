@@ -53,14 +53,9 @@ namespace ProjectOOP.Pages
                 //Them san pham
 
                 var sp = new SanPham(SoHoaDon,MaSP, TenSP, DGia, SoLuong, ThanhTien, ctySX, nam, LoaiHang, hsd);
-                if (MaSP != 0)
-                {
-                    sp.maSP = Convert.ToInt32(MaSP);
-                }
-                else
-                {
-                    _xuLySanPham.ThemSanPham(sp);
-                }
+                
+                    _xuLySanPham.ThemSanPham(sp, MaSP);
+                
                 
                 Response.Redirect("/MH_DanhSachMua");
             }
