@@ -3,16 +3,19 @@
 @using Entities
 @{
 }
-
+<h1 style="text-align:center">DANH SÁCH HÀNG MUA</h1>
+<br />
 <form method="post">
     <label for="tukhoa">Từ Khóa:</label><br />
     <input type="text" name="txtSearch" value="" />
     <input type="submit" name="btnSearch" value="Tìm Kiếm" />
 </form>
 <br />
-<form method="post">
-    <label name="date">Today: @DateOnly.FromDateTime(DateTime.Today)      </label>
-    <input type="submit" name="btnSearch" value="Danh sách hàng hết hạn sử dụng" />
+<form>
+    <label name="date">Today: @DateOnly.FromDateTime(DateTime.Today)</label><br />
+    <button>
+        <a href="/MH_HanSuDung">Danh sách hàng hóa hết hạn</a>
+    </button>
 </form>
 
 <div>
@@ -50,7 +53,7 @@
                     <td>@sp.loaiHang</td>
                     <td>
                         <a href="/MH_SuaSanPhamMua?maSP=@sp.maSP">Sửa</a>
-                        <a href="/MH_XoaPhamMua?maSP=@sp.maSP">Xóa</a>
+                        <a href="/MH_XoaSanPham?maSP=@sp.maSP">Xóa</a>
                             
                         
                        
@@ -61,5 +64,3 @@
         </tbody>
     </table>
 </div>
-
-@Model.Chuoi

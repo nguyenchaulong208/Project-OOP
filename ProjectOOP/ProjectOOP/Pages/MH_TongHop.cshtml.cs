@@ -12,14 +12,8 @@ namespace ProjectOOP.Pages
 
         private IXuLySanPham _xuLySanPham = new XuLySanPham();
 
-  
-
 
         public List<SanPham> DanhSachTongHop;
-        public List<SanPham> DanhSachTongHopNew;
-        public List<SanPham> dsMua;
-
-        public List<SanPham> dsBan;
         public void OnGet()
         {
 

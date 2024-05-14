@@ -120,33 +120,45 @@ namespace Services
             List<SanPham> TongHop = new List<SanPham>();
             loadFile();
             List<SanPham> dsMua = DanhSachTongHop();
-      
+
             loadFileOut();
             List<SanPham> dsBan = DanhSachTongHop();
-
-            foreach(var item in dsMua)
+            int SL;
+            foreach (var sp in dsMua)
             {
-                bool check = false;
-                foreach (var item2 in dsBan)
+                SL = 0;
+                bool found = false;
+                // Duyệt qua danh sách dsMua để kiểm tra xem sản phẩm đã được thêm vào dschưa
+                foreach (var item in dsBan)
                 {
-                    if(item.maSP== item2.maSP)
+                    if (sp.maSP == item.maSP)
                     {
+                        // Tăng số lượng sản phẩm nếu đã có trong dsMua
+                        item.soLuong += sp.soLuong;
+                        found = true;
 
-                        item2.soLuong += item.soLuong;
-                        check = true;
-                        break;
+
+                    }
+                    if(item.maSP != sp.maSP)
+                    {
+                        SL = 0 - item.soLuong;
+                        item.soLuong = SL;
                     }
 
                 }
-                if (!check)
+                // Nếu sản phẩm chưa có trong dsMua, thêm vào danh sách
+                if (!found)
                 {
-                    TongHop.Add(item);
-                }
-            }
 
-            // Thêm danh sách sản phẩm bán vào danh sách tổng hợp
+                    TongHop.Add(sp);
+                }
+                
+
+            }
             TongHop.AddRange(dsBan);
-        
+            // Thêm danh sách sản phẩm bán vào danh sách tổng hợp
+
+
 
             return TongHop;
         }
@@ -187,6 +199,22 @@ namespace Services
         //{
 
         //}
+        public void XoaSanPham(int MaSP)
+        {
+            List<SanPham> ds = new List<SanPham>();
+            ds = _luuTruSanPham.DocDanhSachSanPham();
+            foreach(var item in ds)
+            {
+                if(item.maSP == MaSP)
+                {
+                    ds.Remove(item);
+                    break;
+                }
+                
+            }
+            _luuTruSanPham.LuuDanhSachSanPham(ds);
+
+        }
 
     }
     

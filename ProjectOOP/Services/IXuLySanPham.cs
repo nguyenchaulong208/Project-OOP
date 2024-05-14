@@ -19,6 +19,7 @@ namespace Services
         void loadFile();
         void loadFileOut();
         List<SanPham>TongHopSanPham();
+        void XoaSanPham(int MaSP);
 
 
     }

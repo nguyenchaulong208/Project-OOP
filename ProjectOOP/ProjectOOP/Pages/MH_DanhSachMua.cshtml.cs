@@ -8,13 +8,11 @@ namespace ProjectOOP.Pages
 {
     public class MH_DanhSachMuaModel : PageModel
     {
-        public string Chuoi = string.Empty;
+
 
         [BindProperty]
         public string txtSearch { get; set; } //name phải giống với name của textbox
 
-        [BindProperty]
-        public DateOnly date { get; set; }
 
         private IXuLySanPham _xuLySanPham = new XuLySanPham();
 
@@ -27,29 +25,18 @@ namespace ProjectOOP.Pages
 
          _xuLySanPham.loadFile();
 
-           
-        if(txtSearch != string.Empty)
-            {
                 DanhSachMua = _xuLySanPham.DocDanhSachSanPham();
-            }
-        else
-            {
-                DanhSachMua = _xuLySanPham.HanSuDung(date);
-            }
+            
 
-           
 
         }
         public void OnPost()
         {
             _xuLySanPham.loadFile();
-         
-                //DanhSachMua = _xuLySanPham.DocDanhSachSanPham(txtSearch);
-           
-                DanhSachMua = _xuLySanPham.HanSuDung(date);
 
 
-           
+            DanhSachMua = _xuLySanPham.DocDanhSachSanPham(txtSearch);
+
 
 
         }
