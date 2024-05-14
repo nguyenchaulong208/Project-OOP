@@ -1,0 +1,51 @@
+﻿@page
+@using Entities
+@model ProjectOOP.Pages.MH_TongHopModel
+@{
+    int stt = 1;
+}
+<h1 style="text-align:center">DANH SÁCH TỔNG HỢP HÀNG HÓA</h1>
+<br />
+<form method="post">
+    <label for="tukhoa">Từ Khóa:</label><br />
+    <input type="text" name="txtSearch" value="" />
+    <input type="submit" name="btnSearch" value="Tìm Kiếm" />
+</form>
+<form method="post">
+    <label name="date">Today: @DateOnly.FromDateTime(DateTime.Today)      </label>
+    <button>
+        <a href="MH_DanhSachMua" style="text-decoration:none; color:black">Hạn sử dụng</a>
+    </button>
+</form>
+<div>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Số thứ tự</th>
+                <th>Mã sản phẩm</th>
+                <th>Tên sản phẩm</th>
+                <th>Số lượng</th>
+                <th>Công ty sản xuất</th>
+                <th>Năm sản xuất</th>
+                <th>Loại hàng</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            @foreach (SanPham sp in Model.DanhSachTongHop)
+            {
+                <tr>
+                    <td>@stt</td>
+                    <td>@sp.maSP</td>
+                    <td>@sp.tenSP</td>
+                    <td>@sp.soLuong</td>
+                    <td>@sp.congTySanXuat</td>
+                    <td>@sp.namSanXuat</td>
+                    <td>@sp.loaiHang</td>
+
+                </tr>
+                stt++;
+            }
+        </tbody>
+    </table>
+</div>
