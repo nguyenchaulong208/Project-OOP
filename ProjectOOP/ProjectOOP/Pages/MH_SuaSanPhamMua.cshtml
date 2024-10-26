@@ -1,0 +1,34 @@
+﻿@page
+@model ProjectOOP.Pages.MH_SuaSanPhamMuaModel
+@{
+   
+}
+<h1 style="text-align:center">SỬA HÓA ĐƠN MUA HÀNG</h1>
+<br />
+<div>
+    <form method="post">
+        <label for="SoHoaDon">Số hóa đơn</label><br />
+        <input type="text" name="SoHoaDon" value="@Model.SoHoaDon" /><br />
+        <label for="MaSP">Mã sản phẩm</label><br />
+        <input type="text" name="MaSP" value="@Model.MaSP"/><br />
+        <label for="TenSP">Tên sản phẩm</label><br />
+        <input type="text" name="TenSP" value="@Model.TenSP" /><br />
+        <label for="SoLuong">Số lượng</label><br />
+        <input type="text" name="SoLuong" value="@Model.SoLuong" /><br />
+        <label for="DGia">Đơn giá</label><br />
+        <input type="text" name="DGia" value="@Model.DGia" /><br />
+        <label for="ThanhTien">Thành tiền</label><br />
+        <input type="text" name="ThanhTien" value="@Model.ThanhTien" /><br />
+        <label for="ctySX">Công ty sản xuất</label><br />
+        <input type="text" name="ctySX" value="@Model.ctySX" /><br />
+        <label for="nam">Năm sản xuất</label><br />
+        <input type="text" name="nam" value="@Model.nam" /><br />
+        <label for="hsd">Hạn sử dụng</label><br />
+        <input type="text" name="hsd" value="@Model.hsd"/><br /><br />
+        <label for="LoaiHang">Loại hàng</label><br />
+        <input type="text" name="LoaiHang" value="@Model.LoaiHang" /><br /><br />
+
+        <input type="submit" name="btnEdit" value="Sửa" />
+    </form>
+</div>
+@Model.Chuoi

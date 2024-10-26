@@ -1,0 +1,83 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ProjectOOP
+build_property.RootNamespace = ProjectOOP
+build_property.ProjectDir = D:\Github Code\Project-OOP\ProjectOOP\ProjectOOP\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Github Code\Project-OOP\ProjectOOP\ProjectOOP
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Github Code/Project-OOP/ProjectOOP/ProjectOOP/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github Code/Project-OOP/ProjectOOP/ProjectOOP/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github Code/Project-OOP/ProjectOOP/ProjectOOP/Pages/MH_DanhSachBan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfRGFuaFNhY2hCYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github Code/Project-OOP/ProjectOOP/ProjectOOP/Pages/MH_DanhSachMua.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfRGFuaFNhY2hNdWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github Code/Project-OOP/ProjectOOP/ProjectOOP/Pages/MH_HanSuDung.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfSGFuU3VEdW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github Code/Project-OOP/ProjectOOP/ProjectOOP/Pages/MH_SuaSanPhamBan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfU3VhU2FuUGhhbUJhbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github Code/Project-OOP/ProjectOOP/ProjectOOP/Pages/MH_SuaSanPhamMua.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfU3VhU2FuUGhhbU11YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github Code/Project-OOP/ProjectOOP/ProjectOOP/Pages/MH_ThemSanPhamBan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfVGhlbVNhblBoYW1CYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github Code/Project-OOP/ProjectOOP/ProjectOOP/Pages/MH_ThemSanPhamMua.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfVGhlbVNhblBoYW1NdWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github Code/Project-OOP/ProjectOOP/ProjectOOP/Pages/MH_TongHop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfVG9uZ0hvcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github Code/Project-OOP/ProjectOOP/ProjectOOP/Pages/MH_XoaSanPham.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfWG9hU2FuUGhhbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github Code/Project-OOP/ProjectOOP/ProjectOOP/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github Code/Project-OOP/ProjectOOP/ProjectOOP/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github Code/Project-OOP/ProjectOOP/ProjectOOP/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github Code/Project-OOP/ProjectOOP/ProjectOOP/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github Code/Project-OOP/ProjectOOP/ProjectOOP/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-h1an54tqms

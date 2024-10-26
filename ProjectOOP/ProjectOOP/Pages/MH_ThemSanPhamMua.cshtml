@@ -1,0 +1,32 @@
+﻿@page
+@model ProjectOOP.Pages.MH_ThemSanPhamMuaModel
+@{
+}
+<h1 style="text-align:center">HÓA ĐƠN MUA HÀNG</h1>
+<br />
+<div>
+    <form method="post">
+        <label for="SoHoaDon">Số hóa đơn</label><br />
+        <input type="text" name="SoHoaDon" /><br />
+        <label for="MaSP">Mã sản phẩm</label><br />
+        <input type="text" name="MaSP" /><br />
+        <label for="TenSP">Tên sản phẩm</label><br />
+        <input type="text" name="TenSP" /><br />
+        <label for="SoLuong">Số lượng</label><br />
+        <input type="text" name="SoLuong" /><br />
+        <label for="DGia">Đơn giá</label><br />
+        <input type="text" name="DGia" /><br />
+        <label for="ThanhTien">Thành tiền</label><br />
+        <input type="text" name="ThanhTien" /><br />
+        <label for="ctySX">Công ty sản xuất</label><br />
+        <input type="text" name="ctySX" /><br />
+        <label for="nam">Năm sản xuất</label><br />
+        <input type="text" name="nam" /><br />
+        <label for="hsd">Hạn sử dụng</label><br />
+        <input type="text" name="hsd" /><br /><br />
+        <label for="LoaiHang">Loại hàng</label><br />
+        <input type="text" name="LoaiHang" /><br /><br />
+        <input type="submit" name="btnAdd" value="Thêm" />
+    </form>
+    @Model.Chuoi
+</div>

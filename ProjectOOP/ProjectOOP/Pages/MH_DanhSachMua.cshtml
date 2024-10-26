@@ -1,0 +1,66 @@
+﻿@page
+@model ProjectOOP.Pages.MH_DanhSachMuaModel
+@using Entities
+@{
+}
+<h1 style="text-align:center">DANH SÁCH HÀNG MUA</h1>
+<br />
+<form method="post">
+    <label for="tukhoa">Từ Khóa:</label><br />
+    <input type="text" name="txtSearch" value="" />
+    <input type="submit" name="btnSearch" value="Tìm Kiếm" />
+</form>
+<br />
+<form>
+    <label name="date">Today: @DateOnly.FromDateTime(DateTime.Today)</label><br />
+    <button>
+        <a href="/MH_HanSuDung">Danh sách hàng hóa hết hạn</a>
+    </button>
+</form>
+
+<div>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Số hóa đơn</th>
+                <th>Mã sản phẩm</th>
+                <th>Tên sản phẩm</th>
+                <th>Số lượng</th>
+                <th>Đơn giá</th>
+                <th>Thành tiền</th>
+                <th>Hạn sử dụng</th>
+                <th>Công ty sản xuất</th>
+                <th>Năm sản xuất</th>
+                <th>Loại hàng</th>
+                <th></th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (SanPham sp in Model.DanhSachMua)
+            {
+                <tr>
+                    <td>@sp.soHoaDon</td>
+                    <td>@sp.maSP</td>
+                    <td>@sp.tenSP</td>
+                    <td>@sp.soLuong</td>
+                    <td>@sp.donGia</td>
+                    <td>@sp.thanhTien</td>
+                    <td>@sp.hanSuDung</td>
+                    <td>@sp.congTySanXuat</td>
+                    <td>@sp.namSanXuat</td>
+                    <td>@sp.loaiHang</td>
+                    <td>
+                        <a href="/MH_SuaSanPhamMua?maSP=@sp.maSP">Sửa</a>
+                        <a href="/MH_XoaSanPham?maSP=@sp.maSP">Xóa</a>
+                            
+                        
+                       
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
